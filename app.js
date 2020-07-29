@@ -3,7 +3,8 @@ class App extends React.Component {
     render() {
       return (
         <div>
-        <p>hello world</p>
+           <Title text="If I Rule the DOM" font="cursive" />
+           <Title text="Talk is cheap. Show me the code" font="fantasy" />
          </div>
       );
     }
@@ -11,6 +12,28 @@ class App extends React.Component {
 
 
 
+
+
+  class Title extends React.Component {
+    constructor(props) {
+         super(props);
+
+       }
+   
+    render() {
+         var style = {
+           "fontFamily": this.props.font
+         };
+         return (
+           <h2 style={style}></h2>
+   
+      );
+   
+    }
+   
+   }
+   
+    
 
 
 
